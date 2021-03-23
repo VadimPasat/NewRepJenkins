@@ -1,16 +1,15 @@
+  
 pipeline {
    agent any
    stages {
-       stage('Run Load Test') {
+       stage('read') {
            steps {
                script {
-				echo 'Starting test with Jmeter'
-				bat """
-					CALL C:\\apache-jmeter-5.4.1\\bin\\jmeter.bat -n -t EdidtedNewJmeterscript.jmx ^
-					-Jjmeterengine.force.system.exit=true
-				"""
+				echo 'Starting test with Taurus'
+				bzt "jmeter/TestPlanBureacovaUpdate.jmx -report -o settings.artifacts-dir=artifacts"
 				echo 'Test completed'
                }
            }
        }
    }
+}
