@@ -3,5 +3,6 @@ execution:
 - executor: jmeter
   scenario:
     script: EdidtedNewJmeterscript.jmx
+    hold-for: 5m
     locations:
       us-east-1: 1
