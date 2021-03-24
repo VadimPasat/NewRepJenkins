@@ -5,7 +5,8 @@ hold-for: 5m
 scenario: with_script
 execution: jmeter
 
-scenario:
+scenarios:
+with_script:
 script: EdidtedNewJmeterscript.jmx
  
 reporting:
