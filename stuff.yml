@@ -1,13 +1,9 @@
 execution:
 - concurrency: 10
   hold-for: 5m
-  ramp-up: 2m
-  scenario: yaml_example
   
-scenarios:
-  yaml_example:
-    retrieve-resources: false
-   script: EdidtedNewJmeterscript.jmx
+scenario:
+script: EdidtedNewJmeterscript.jmx
 
 reporting:
 - module: final-stats
