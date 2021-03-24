@@ -5,6 +5,7 @@ hold-for: 5m
 scenario: with_script
 
 scenarios:
+with_script:
 script: TestRun.jmx
  
 reporting:
