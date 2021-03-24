@@ -1,11 +1,9 @@
+---
 execution:
 - executor: jmeter
-concurrency: 10
 hold-for: 5m
-scenarios: with_script
 
 scenarios:
-with_script:
 script: TestRun.jmx
  
 reporting:
