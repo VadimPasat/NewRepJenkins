@@ -1,15 +1,18 @@
 execution:
-- iterations: 5
-concurrency: 10
-hold-for: 5
-scenario: with_script
-execution: jmeter
+- concurrency: 10
+  hold-for: 5m
+  ramp-up: 2m
+  scenario: yaml_example
+  
+scenarios:
+  yaml_example:
+    retrieve-resources: false
+   script: EdidtedNewJmeterscript.jmx
 
-scenario:
-script: EdidtedNewJmeterscript.jmx
- 
 reporting:
-- module: passfail
-criteria:
-- "avg-rt>150ms for 10s, continue as failed"
-- "fail>50% for 10s, stop as failed"
+- module: final-stats
+- module: console
+
+settings:
+  check-interval: 5s
+  default-executor: jmeter
