@@ -1,7 +1,6 @@
 ---
 execution:
 - executor: jmeter
-hold-for: 5m
 
 scenarios:
 script: TestRun.jmx
