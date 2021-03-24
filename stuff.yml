@@ -1,7 +1,7 @@
 execution:
 - iterations: 5
 concurrency: 10
-hold-for: 5m
+hold-for: 5
 scenario: with_script
 execution: jmeter
 
