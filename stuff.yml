@@ -1,16 +1,8 @@
-
+---
 execution:
-- iterations: 5
-concurrency: 10
-hold-for: 5m
-scenario: with_script
-
-scenarios:
-with_script:
-script: TestRun.jmx
- 
-reporting:
-- module: passfail
-criteria:
-- "avg-rt>150ms for 10s, continue as failed"
-- "fail>50% for 10s, stop as failed"
+- executor: jmeter
+  scenario:
+    script: EdidtedNewJmeterscript.jmx
+    hold-for: 5m
+    locations:
+      us-east-1: 1
