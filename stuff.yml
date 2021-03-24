@@ -2,7 +2,7 @@ execution:
 - iterations: 5
 concurrency: 10
 hold-for: 5m
-scenario: with_script
+scenarios: with_script
 
 scenarios:
 with_script:
