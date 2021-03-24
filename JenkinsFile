@@ -6,7 +6,7 @@ pipeline {
            steps {
                script {
 				echo 'Starting test with Taurus'
-				bzt "EdidtedNewJmeterscript.jmx stuff.yml -report -o settings.artifacts-dir=artifacts"
+				bzt "EdidtedNewJmeterscript.jmx -report -o settings.artifacts-dir=artifacts"
 				
                }
            }
