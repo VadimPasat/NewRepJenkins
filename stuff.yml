@@ -6,7 +6,6 @@ scenarios: with_script
 execution: jmeter
 
 scenarios:
-with_script:
 script: EdidtedNewJmeterscript.jmx
  
 reporting:
