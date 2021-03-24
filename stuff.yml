@@ -2,7 +2,7 @@ execution:
 concurrency: 10
 hold-for: 5m
 scenario: with_script
-- executor: jmeter
+executor: jmeter
 
 scenarios:
 script: EdidtedNewJmeterscript.jmx
