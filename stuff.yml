@@ -1,4 +1,4 @@
-execution:
+---
 - iterations: 5
  concurrency: 10
  hold-for: 5m
@@ -6,7 +6,7 @@ execution:
 
 scenarios:
 with_script:
-script: 'EdidtedNewJmeterscript.jmx
+script: EdidtedNewJmeterscript.jmx
  
 reporting:
 - module: passfail
