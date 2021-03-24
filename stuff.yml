@@ -2,10 +2,10 @@ execution:
 - iterations: 5
 concurrency: 10
 hold-for: 5m
-scenarios: with_script
+scenario: with_script
 execution: jmeter
 
-scenarios:
+scenario:
 script: EdidtedNewJmeterscript.jmx
  
 reporting:
